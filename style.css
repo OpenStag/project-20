@@ -1,0 +1,261 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links .btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #e85b1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e85b1c;
+    color: white;
+    padding: 50px 30px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content .highlight {
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.appointment-btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #e85b1c;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 200ox;
+}
+
+
+.services {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.service-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ffe5d0;
+    padding: 10px;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+
+.vets {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+}
+
+.vets h2 {
+    font-size: 2rem;
+}
+
+
+
+.veterinarian-section {
+    background-color: #fff;
+    padding: 50px 30px;
+}
+
+.vet-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.vet-image img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.vet-content {
+    flex: 1;
+}
+
+.vet-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.vet-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+
+.accessories-section {
+    background-color: #fff;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.accessories-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.accessories-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.accessory-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+.accessory-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.accessory-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.accessory-image img {
+    width: 500px;
+    border-radius: 15px;
+}
+.footer-top{
+  align-items:center;
+  width: 700px;
+  border-radius: 15px;
+}
+
+
+.footer {
+    background-color: #e85b1c;
+    color: #fff;
+    padding: 40px 20px 10px;
+    text-align: center;
+}
+
+.footer-top img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin: 10px 0;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-center h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.social-icons img {
+    margin: 0 8px;
+    vertical-align: middle;
+}
