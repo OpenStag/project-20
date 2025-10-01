@@ -20,7 +20,6 @@
     border-bottom: 1px solid #e5e5e5;
   }
 
-
   .logo img{
     width: 177px;
     height: 91px;
@@ -154,8 +153,8 @@
     display: flex;
     flex-direction: column;
     gap :0px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /*border-top-left-radius: 20px;
+    border-top-right-radius: 20px;*/
   }
   
   .discussion {
@@ -168,17 +167,42 @@
     border-width: 1px;
     justify-content: space-between;
   }
-  
-  .discussion .icon img{
+
+  .discussion .icon1 img{
     border: #000000;
     border-radius: 25px;
     border: 1px solid #00000080;
     padding: 10px;
+    background-color: #85dd9f;
+  }
+
+  .discussion .icon2 img{
+    border: #000000;
+    border-radius: 25px;
+    border: 1px solid #00000080;
+    padding: 10px;
+    background-color: #9b93e7;
+  }
+  
+  .discussion .icon3 img{
+    border: #000000;
+    border-radius: 25px;
+    border: 1px solid #00000080;
+    padding: 10px;
+    background-color: #eca0bd;
+  }
+
+  .discussion .icon4 img{
+    border: #000000;
+    border-radius: 25px;
+    border: 1px solid #00000080;
+    padding: 10px;
+    background-color: #95d4e4;
   }
 
   .discussion .content {
     flex: 1;
-    margin-left: 15px;
+    margin-left: 0px;
     text-align: left;
   }
   
