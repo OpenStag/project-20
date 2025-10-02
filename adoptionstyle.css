@@ -206,7 +206,7 @@ body {
 .filter-box label {
   font-size: 24px;
   font-weight: 800;
-  color: #B86A0D; /* Filter label color */
+  color: #B86A0D; 
   margin-bottom: 8px;
   letter-spacing: 1px;
   font-family: inherit;
@@ -279,6 +279,97 @@ body {
   font-weight: 700;
   opacity: 1;
   font-size: 24px;
+}
+
+/* Pet Cards Section */
+.pet-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;      
+  margin: 48px auto 0 auto;     
+  max-width: 1400px;
+  width: 100%;                  
+  box-sizing: border-box;
+}
+
+.pet-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 4px 6px 12px 0px rgba(0,0,0,0.13);
+  width: 408px;
+  min-width: 260px;
+  max-width: 100%;
+  height: 514px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.pet-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 8px 12px 24px 0px rgba(0,0,0,0.18);
+}
+
+.pet-card-img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pet-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px 20px 20px 20px;
+  background: #fff;
+}
+
+.pet-card-name {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: #3d372e;
+}
+
+.pet-card-age {
+  font-size: 1.2rem;
+  color: #888;
+  margin: 0 0 18px 0;
+}
+
+.pet-card-btn {
+  background: #d8492e;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 0;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.pet-card-btn:hover {
+  background: #b63a1d;
+}
+
+
+
+@media (max-width: 1300px) {
+  .pet-cards {
+    justify-content: center;
+    gap: 24px;
+  }
+  .pet-card {
+    width: 320px;
+    height: 440px;
+  }
 }
 
 
@@ -423,4 +514,20 @@ body {
   .filter-box input[type="text"]::placeholder {
     font-size: 18px;
   }
+
+
+  .pet-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .pet-card {
+    width: 95vw;
+    min-width: 0;
+    height: auto;
+  }
+  .pet-card-img {
+    height: 180px;
+  }
+  
 }
