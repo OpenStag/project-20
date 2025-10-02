@@ -248,7 +248,7 @@ body {
 .select-icon {
   position: absolute;
   right: 24px;
-  top: 60px; 
+  top: 110px; 
   transform: translateY(-50%);
   color: #222;
   font-size: 1.7rem;
@@ -261,7 +261,7 @@ body {
 .filter-box .search-icon {
   position: absolute;
   left: 20px;
-  top: 60px; 
+  top: 110px; 
   transform: translateY(-50%);
   color: #7A7A7A;
   font-size: 1.6rem;
