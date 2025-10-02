@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woof Club Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fdf4ea;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    header .logo {
+      font-weight: bold;
+      font-size: 18px;
+      color: #5b3628;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .search-bar input {
+      padding: 6px 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* Profile Card */
+    .profile-card {
+      background: #fff;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 800px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .profile-info img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #eee;
+    }
+
+    .profile-details h3 {
+      margin: 0;
+    }
+
+    .edit-btn {
+      background: #f97316;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Tabs */
+    .tabs {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      gap: 20px;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .tabs a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .tabs a.active {
+      color: #f97316;
+      border-bottom: 2px solid #f97316;
+      padding-bottom: 5px;
+    }
+
+    /* Section */
+    section {
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .pet-list {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .pet-list img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+
+    .card .card-body {
+      padding: 10px;
+    }
+
+    .card .card-body h4 {
+      margin: 0 0 5px;
+      font-size: 14px;
+    }
+
+    .card .card-body p {
+      margin: 0;
+      font-size: 12px;
+      color: #666;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">🐾 Woof Club</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Community</a>
+      <a href="#">Adoption</a>
+      <a href="#">Events</a>
+      <a href="#">Health Tracker</a>
+    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+    </div>
+  </header>
+
+  <!-- Profile Card -->
+  <div class="profile-card">
+    <div class="profile-info">
+      <img src="C:\Users\HP\Desktop\prjects\project 1 pics\pngtree-cute-cartoon-girl-with-big-eyes-looking-up-png-image_14149087.png" alt="Profile">
+      <div class="profile-details">
+        <h3>Sophia Markason</h3>
+        <p>Pet Enthusiast | Dog Mom <br> Joined in 2022</p>
+      </div>
+    </div>
+    <button class="edit-btn">Edit Profile</button>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <a href="#" class="active">My Pets</a>
+    <a href="#">Favorites</a>
+    <a href="#">Saved Adoption</a>
+    <a href="#">Event RSVPs</a>
+  </div>
+
+  <!-- My Pets -->
+  <section>
+    <h2>My Pets</h2>
+    <div class="pet-list">
+      <div>
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\images (4).jpeg" alt="Dog">
+        <p>Kiyu</p>
+      </div>
+      <div>
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\image-86754-800.jpg" alt="Cat">
+        <p>Pinky</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Favorites -->
+  <section>
+    <h2>Favorites</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\images.jpeg" alt="">
+        <div class="card-body">
+          <h4>Dog Park Adventures</h4>
+          <p>A Day At The Park With Buddy</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\cat_image_2.webp" alt="">
+        <div class="card-body">
+          <h4>Cat Nap Chronicals</h4>
+          <p>Pinky’s Favorite Napping Spots</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\images (1).jpeg" alt="">
+        <div class="card-body">
+          <h4>Training Tips</h4>
+          <p>Effective Training Tips</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Saved Adoption -->
+  <section>
+    <h2>Saved Adoption</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\Labrador-Retriever-Main-4-r7j91jhul1l415dbtkoii2xera57j24pxmttby9cu8.jpg" alt="">
+        <div class="card-body">
+          <h4>Adopt A Labrador Retriever</h4>
+          <p>Labrador Puppy Looking For A Home</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\images (2).jpeg" alt="">
+        <div class="card-body">
+          <h4>Find A Home For A Kitten</h4>
+          <p>Kitten Needs A Loving Family</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event RSVPs -->
+  <section>
+    <h2>Event RSVPs</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\istockphoto-1632569985-612x612.jpg" alt="">
+        <div class="card-body">
+          <h4>Pet Adoption Fair</h4>
+          <p>Find Your New Furry Friend</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="C:\Users\HP\Desktop\prjects\project 1 pics\images (3).jpeg" alt="">
+        <div class="card-body">
+          <h4>Dog Agility Competition</h4>
+          <p>Watch Dogs Compete in Agility</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
