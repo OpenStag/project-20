@@ -1,9 +1,8 @@
 * {
     margin: 0;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   
   body {
@@ -13,31 +12,35 @@
   
   .header {
     background-color:#EFD7BB;
-    padding: 15px 30px;
+    padding: 15px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #e5e5e5;
+    flex-wrap: wrap;
   }
 
   .logo img{
-    width: 177px;
-    height: 91px;
+    width: 150px;
+    height: auto;
   }
   
   .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
   }
   
   .nav-links li a {
     text-decoration: none;
     color: #000000;
     font-weight: 600;
+    transition: color 0.2s ease;
   }
-  
-  .nav-links .active a {
+
+  .nav-links .active a,
+  .nav-links li a:hover {
     color: #CD3705;
     font-weight: 600;
   }
@@ -45,13 +48,16 @@
   .search-profile {
     display: flex;
     align-items: center;
-    gap: 10px;             
+    gap: 10px; 
+    margin-top: 10px;            
   }
   
   .search-profile input {
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 25px;
     border: 1px solid #0000008C;
+    width: 200px;
+    max-width: 100%;
   }
 
   /*.profile-icon img{
@@ -60,16 +66,16 @@
   }*/
   
   .profile-icons img{
-    width: auto;
-    height: 69px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    display: inline-block;
+    /*display: inline-block;*/
     object-fit: cover;
   }
   
   .forum-container {
-    padding-block: 16px;
-    padding: inline 24px;
+    /*padding-block: 16px;*/
+    padding: 16px 24px;
     text-align: center;
 
   }
@@ -77,11 +83,11 @@
   .subtitle {
     margin: 20px 0;
     color: #0000007A;
-    font-family: 'Inter', sans-serif;
+    /*font-family: 'Inter', sans-serif;*/
     font-weight: 600;       
-    font-size: 24px;
-    line-height: 100%;     
-    letter-spacing: 0;     
+    font-size: 18px;
+    line-height: 130%;     
+    /*letter-spacing: 0;*/     
     text-transform: capitalize;
   }
   
@@ -89,7 +95,7 @@
     margin: 25px 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 12px;
     justify-content: center;
   }
 
@@ -101,13 +107,16 @@
   }
   
   .categories button {
-    padding: 10px 20px;
+    padding: 8px 14px;
     border: none;
     background-color: #FFFFFF;
     border-radius: 20px;
     cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
   }
-  
+
+  .categories button:hover,
   .categories .active {
     background-color: #e67300;
     color: white;
@@ -119,6 +128,7 @@
     margin-bottom: 20px;
     font-weight: bold;
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .tab {
@@ -136,8 +146,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
   }
   
   .create-post {
@@ -147,12 +159,18 @@
     padding: 8px 16px;
     border-radius: 8px;
     cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .create-post:hover {
+    background-color: #cd5f00;
   }
   
   .discussion-list {
     display: flex;
     flex-direction: column;
-    gap :0px;
+    gap :12px;
     /*border-top-left-radius: 20px;
     border-top-right-radius: 20px;*/
   }
@@ -162,10 +180,12 @@
     align-items: center;
     background-color: #FFFFFF;
     padding: 15px;
-    border-radius: 0px;
+    border-radius: 12px;
     border: 1px solid #00000080;
-    border-width: 1px;
+    /*border-width: 1px;*/
     justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; 
   }
 
   .discussion .icon1 img{
@@ -202,8 +222,9 @@
 
   .discussion .content {
     flex: 1;
-    margin-left: 0px;
+    /*margin-left: 0px;*/
     text-align: left;
+    
   }
   
   .discussion .content h3 {
@@ -220,8 +241,14 @@
     color: #0000008C;
     padding: 8px 16px;
     cursor: pointer;
-    font-weight: 500px;
-    font-style: capitalize;
+    font-weight: 600px;
+    /*font-style: capitalize;*/
     background-color: #FFFFFF;
     border: none;
+    transition: all 0.2s ease;
+  }
+  
+  .upvote:hover {
+    background-color: #e67300;
+    color: #fff;
   }
