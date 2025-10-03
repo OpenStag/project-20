@@ -51,7 +51,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 20px;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .services h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 30px;
 }
 
@@ -120,7 +120,7 @@ body {
 }
 
 .vets h2 {
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 
@@ -164,7 +164,7 @@ body {
 }
 
 .accessories-section h2 {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-bottom: 30px;
 }
 
@@ -207,11 +207,13 @@ body {
     background-color: #e85b1c;
     color: #fff;
     padding: 40px 20px 10px;
-    text-align: center;
+    text-align: right;
+  
+
 }
 
 .footer-top img {
-    width: 120px;
+    width: 150px;
     height: auto;
     margin-bottom: 20px;
     border-radius: 50%;
