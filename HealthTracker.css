@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3d7b9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff3e6;
+    padding: 12px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .navbar .logo {
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+    }
+
+        .navbar a.active {
+            color: #e65c1b;
+        }
+
+.search-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+    .search-user input {
+        padding: 6px 10px;
+        border-radius: 20px;
+        border: 1px solid #ccc;
+       
+    }
+
+.user-icon {
+    font-size: 12px;
+}
+
+/* Tracker Container */
+.tracker-container {
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: #555;
+}
+
+    .tracker-container h1 {
+        margin-bottom: 20px;
+    }
+
+.pet-select {
+    margin: 15px auto;
+    background: #D49A6966;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+    .pet-select label {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .pet-select select {
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        font-size: 14px;
+    }
+
+/* Health Cards */
+.health-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px auto;
+}
+
+.card {
+    background: white;
+    border: 2px solid #e65c1b;
+    border-radius: 12px;
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+    .card img {
+        width: 70px;
+        margin-top: 10px;
+    }
+
+    .card h3 span {
+        font-size: 14px;
+        color: #555;
+    }
+
+/* Reminders */
+.reminders {
+    text-align: left;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+    .reminders h2 {
+        margin-bottom: 15px;
+    }
+
+.reminder {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+}
+
+    .reminder .calendar {
+        font-size: 30px;
+        margin-right: 15px;
+    }
+
+/* Add Button */
+.add-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #e65c1b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+}
+
+    .add-btn:hover {
+        background: #DE592D;
+    }
